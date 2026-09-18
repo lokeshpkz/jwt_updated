@@ -98,14 +98,16 @@ def process_token(uid, password):
     # Send the encrypted data to the server
     url = "https://loginbp.ggblueshark.com/MajorLogin"
     headers = {
-        "User-Agent": profile["user_agent"],
-        "Connection": "Keep-Alive",
-        "Accept-Encoding": "gzip",
-        "Content-Type": "application/octet-stream",
-        "Expect": "100-continue",
-        "X-Unity-Version": "2018.4.11f1",
-        "X-GA": "v1 1",
-        "ReleaseVersion": "OB54",
+        'User-Agent': "UnityPlayer/2018.4.12f1 (UnityWebRequest/1.0, libcurl/8.5.0-DEV)",
+        'Accept': "*/*",
+        'Connection': "Keep-Alive",
+        'Accept-Encoding': "deflate, gzip",
+        'X-GA-SV': "1789561359",
+        'Content-Type': "application/x-www-form-urlencoded",
+        'Expect': "100-continue",
+        'X-GA': "v1 1",
+        'X-Unity-Version': "2018.4.12f1",
+        'ReleaseVersion': "OB55"
     }
     edata = bytes.fromhex(hex_encrypted_data)
 
